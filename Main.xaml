@@ -102,7 +102,6 @@
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">MANCHESTER</InArgument>
           <InArgument x:TypeArguments="x:String">London</InArgument>
-          <InArgument x:TypeArguments="x:String">Boston</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
