@@ -84,7 +84,11 @@
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="593.6,1135.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="UkCities" />
-      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String) From {&quot;MADRID&quot;,&quot;valencia&quot;,&quot;Barcelona&quot;}]" Name="SpCities" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="SpCities">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(of String) From {&quot;MADRID&quot;,&quot;valencia&quot;,&quot;Sevillia&quot;}" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="scg:List(x:String)" Name="AllCities" />
       <Variable x:TypeArguments="scg:List(x:String)" Default="[new list(Of String)]" Name="AllCitiesTitleCase" />
     </Sequence.Variables>
@@ -98,6 +102,7 @@
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">MANCHESTER</InArgument>
           <InArgument x:TypeArguments="x:String">London</InArgument>
+          <InArgument x:TypeArguments="x:String">Boston</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
